@@ -1,3 +1,44 @@
-body {
-	background-color: pink;
+:root {
+	--background: #000;
+	--red: #DF2D18;
+	--blue: #0731BE;
+	--green: #34B49C;
+	--yellow: #F6DA33;
+	--p-font-family: 'Arimo', sans-serif;
+	--span-ff: 'Homemade Apple', cursive;
+	--large-font: 117px;
+	--small-font: 50px;
+	--fixed: fixed;
+	--text-center: center;
+}
+
+html, body {
+	background-color: var(--background);
+	position: var(--fixed);
+}
+
+p {
+	font-family: var(--p-font-family);
+	color: var(--blue);
+	font-size: var(--small-font);
+	text-align: var(--text-center);
+}
+
+span {
+	font-family: var(--span-ff);
+}
+
+span#grounded {
+	color: var(--red);
+	font-size: var(--large-font);
+}
+
+span#humble {
+	color: var(--green);
+	font-size: var(--large-font);
+}
+
+span#everything {
+	color: var(--yellow);
+	font-size: var(--large-font);
 }
